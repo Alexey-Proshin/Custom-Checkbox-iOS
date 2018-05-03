@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Custom_Checkbox_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dgl-c7-bSf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akD-cC-FGr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="L3g-zF-FPz">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4i-xu-IBp">
+                                            <rect key="frame" x="10" y="366" width="100" height="162"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="Xx0-zn-9Sm"/>
+                                                <constraint firstAttribute="height" constant="162" id="yqW-C3-mkq"/>
+                                            </constraints>
+                                        </pickerView>
+                                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpp-iE-an3">
+                                            <rect key="frame" x="110" y="366" width="100" height="162"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="KHd-rm-pdN"/>
+                                                <constraint firstAttribute="height" constant="162" id="p3a-zt-WXb"/>
+                                            </constraints>
+                                        </pickerView>
+                                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBI-CA-OIT">
+                                            <rect key="frame" x="210" y="366" width="100" height="162"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="6ps-Ni-Y78"/>
+                                                <constraint firstAttribute="height" constant="162" id="MEM-jg-rrk"/>
+                                            </constraints>
+                                        </pickerView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GV8-Q7-PXh">
+                                            <rect key="frame" x="84" y="206" width="36.5" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="5n3-tx-JNW"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Others" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpS-uz-LPu">
+                                            <rect key="frame" x="134" y="206" width="52" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="cfe-ei-CR0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMA-Ut-3el">
+                                            <rect key="frame" x="194" y="206" width="47.5" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="xzF-uW-RJU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jb-K4-suV" customClass="Checkbox" customModule="Custom_Checkbox_iOS">
+                                            <rect key="frame" x="89" y="237" width="26" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="26" id="Y6e-am-K54"/>
+                                                <constraint firstAttribute="height" constant="26" id="nY5-8k-mKk"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkedIcon" value="readChecked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="uncheckedIcon" value="readUnchecked"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buq-aF-uX9" customClass="Checkbox" customModule="Custom_Checkbox_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="147" y="237" width="26" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="26" id="8E3-ZB-D5F"/>
+                                                <constraint firstAttribute="width" constant="26" id="Y1b-LF-hg3"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkedIcon" value="execChecked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="uncheckedIcon" value="readUnchecked"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6H-JG-Es6" customClass="Checkbox" customModule="Custom_Checkbox_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="89" y="271" width="26" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="26" id="1IO-xb-P0f"/>
+                                                <constraint firstAttribute="height" constant="26" id="wbK-nP-Loy"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkedIcon" value="writeChecked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="uncheckedIcon" value="writeUnchecked"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs1-XH-xNN" customClass="Checkbox" customModule="Custom_Checkbox_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="89" y="305" width="26" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="26" id="Ta1-hV-wsh"/>
+                                                <constraint firstAttribute="height" constant="26" id="YiB-rG-e2w"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkedIcon" value="execChecked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="uncheckedIcon" value="execUnchecked"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp5-QI-1Pd" customClass="Checkbox" customModule="Custom_Checkbox_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="147" y="271" width="26" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="26" id="TeY-ti-iJc"/>
+                                                <constraint firstAttribute="height" constant="26" id="XGs-xH-yRb"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkedIcon" value="writeChecked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="uncheckedIcon" value="writeUnchecked"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEq-Gv-yW8" customClass="Checkbox" customModule="Custom_Checkbox_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="147" y="305" width="26" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="26" id="BwN-S0-ufx"/>
+                                                <constraint firstAttribute="height" constant="26" id="Ydz-0J-ukX"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkedIcon" value="execChecked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="uncheckedIcon" value="execUnchecked"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6f-1Q-DzO" customClass="Checkbox" customModule="Custom_Checkbox_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="205" y="305" width="26" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="26" id="QrV-ho-uc2"/>
+                                                <constraint firstAttribute="height" constant="26" id="d0w-Li-W4w"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkedIcon" value="execChecked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="uncheckedIcon" value="execUnchecked"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFs-GZ-VDW" customClass="Checkbox" customModule="Custom_Checkbox_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="205" y="270.5" width="26" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="26" id="Mg4-VP-TDI"/>
+                                                <constraint firstAttribute="width" constant="26" id="wNN-HN-XSR"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkedIcon" value="writeChecked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="uncheckedIcon" value="writeUnchecked"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w10-Db-3ga" customClass="Checkbox" customModule="Custom_Checkbox_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="205" y="237" width="26" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="26" id="JlZ-I6-2t8"/>
+                                                <constraint firstAttribute="width" constant="26" id="VN8-Om-Bmg"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkedIcon" value="readChecked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="uncheckedIcon" value="readUnchecked"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Dpp-iE-an3" firstAttribute="centerX" secondItem="L3g-zF-FPz" secondAttribute="centerX" id="2W7-12-CS6"/>
+                                        <constraint firstItem="Jp5-QI-1Pd" firstAttribute="centerX" secondItem="L3g-zF-FPz" secondAttribute="centerX" id="7Hq-cK-vap"/>
+                                        <constraint firstItem="PEq-Gv-yW8" firstAttribute="leading" secondItem="bs1-XH-xNN" secondAttribute="trailing" constant="32" id="7bS-az-IRN"/>
+                                        <constraint firstItem="w10-Db-3ga" firstAttribute="leading" secondItem="Buq-aF-uX9" secondAttribute="trailing" constant="32" id="DNo-bh-4Nf"/>
+                                        <constraint firstItem="lFs-GZ-VDW" firstAttribute="leading" secondItem="Jp5-QI-1Pd" secondAttribute="trailing" constant="32" id="DXH-P9-oKR"/>
+                                        <constraint firstItem="w10-Db-3ga" firstAttribute="centerX" secondItem="gMA-Ut-3el" secondAttribute="centerX" id="GHE-VS-lGj"/>
+                                        <constraint firstItem="X6H-JG-Es6" firstAttribute="centerY" secondItem="L3g-zF-FPz" secondAttribute="centerY" id="Gb6-7H-QiF"/>
+                                        <constraint firstItem="lFs-GZ-VDW" firstAttribute="centerY" secondItem="L3g-zF-FPz" secondAttribute="centerY" id="J8w-f9-6N6"/>
+                                        <constraint firstItem="3Jb-K4-suV" firstAttribute="centerX" secondItem="GV8-Q7-PXh" secondAttribute="centerX" id="K9Y-VK-XPs"/>
+                                        <constraint firstItem="Jp5-QI-1Pd" firstAttribute="centerY" secondItem="L3g-zF-FPz" secondAttribute="centerY" id="KCT-jE-2Tr"/>
+                                        <constraint firstItem="w10-Db-3ga" firstAttribute="top" secondItem="gMA-Ut-3el" secondAttribute="bottom" constant="10" id="M5v-XB-ASy"/>
+                                        <constraint firstItem="Q6f-1Q-DzO" firstAttribute="top" secondItem="lFs-GZ-VDW" secondAttribute="bottom" constant="8" id="MEW-Ye-fAT"/>
+                                        <constraint firstItem="Buq-aF-uX9" firstAttribute="top" secondItem="JpS-uz-LPu" secondAttribute="bottom" constant="10" id="N6X-xC-I7z"/>
+                                        <constraint firstItem="3Jb-K4-suV" firstAttribute="top" secondItem="GV8-Q7-PXh" secondAttribute="bottom" constant="10" id="PGj-Fn-MfV"/>
+                                        <constraint firstItem="PEq-Gv-yW8" firstAttribute="centerX" secondItem="L3g-zF-FPz" secondAttribute="centerX" id="S74-8m-pId"/>
+                                        <constraint firstItem="bs1-XH-xNN" firstAttribute="top" secondItem="X6H-JG-Es6" secondAttribute="bottom" constant="8" id="Vv5-Zb-MBC"/>
+                                        <constraint firstAttribute="bottom" secondItem="m4i-xu-IBp" secondAttribute="bottom" constant="40" id="cB7-s7-txO"/>
+                                        <constraint firstAttribute="bottom" secondItem="QBI-CA-OIT" secondAttribute="bottom" constant="40" id="exF-dj-cML"/>
+                                        <constraint firstAttribute="trailing" secondItem="QBI-CA-OIT" secondAttribute="trailing" constant="10" id="g8Q-SX-p4a"/>
+                                        <constraint firstItem="X6H-JG-Es6" firstAttribute="top" secondItem="3Jb-K4-suV" secondAttribute="bottom" constant="8" id="gKq-Po-Fh8"/>
+                                        <constraint firstItem="Jp5-QI-1Pd" firstAttribute="leading" secondItem="X6H-JG-Es6" secondAttribute="trailing" constant="32" id="gnm-Pi-1ck"/>
+                                        <constraint firstItem="PEq-Gv-yW8" firstAttribute="top" secondItem="Jp5-QI-1Pd" secondAttribute="bottom" constant="8" id="h7w-u0-G7o"/>
+                                        <constraint firstItem="Q6f-1Q-DzO" firstAttribute="leading" secondItem="PEq-Gv-yW8" secondAttribute="trailing" constant="32" id="mly-yP-AHi"/>
+                                        <constraint firstItem="lFs-GZ-VDW" firstAttribute="top" secondItem="w10-Db-3ga" secondAttribute="bottom" constant="8" id="nde-2j-xq3"/>
+                                        <constraint firstItem="Buq-aF-uX9" firstAttribute="leading" secondItem="3Jb-K4-suV" secondAttribute="trailing" constant="32" id="qlG-xn-Ib1"/>
+                                        <constraint firstItem="X6H-JG-Es6" firstAttribute="top" secondItem="3Jb-K4-suV" secondAttribute="bottom" constant="8" id="rNV-mV-cfg"/>
+                                        <constraint firstAttribute="bottom" secondItem="Dpp-iE-an3" secondAttribute="bottom" constant="40" id="rYq-Yr-W6W"/>
+                                        <constraint firstItem="JpS-uz-LPu" firstAttribute="centerX" secondItem="L3g-zF-FPz" secondAttribute="centerX" id="s27-2X-pwe"/>
+                                        <constraint firstItem="bs1-XH-xNN" firstAttribute="top" secondItem="X6H-JG-Es6" secondAttribute="bottom" constant="8" id="s8k-Rr-NOk"/>
+                                        <constraint firstItem="Jp5-QI-1Pd" firstAttribute="top" secondItem="Buq-aF-uX9" secondAttribute="bottom" constant="8" id="wa7-Dh-FFw"/>
+                                        <constraint firstItem="bs1-XH-xNN" firstAttribute="top" secondItem="X6H-JG-Es6" secondAttribute="bottom" constant="8" id="xFg-IW-0tK"/>
+                                        <constraint firstItem="Buq-aF-uX9" firstAttribute="centerX" secondItem="L3g-zF-FPz" secondAttribute="centerX" id="xgw-AB-wro"/>
+                                        <constraint firstItem="m4i-xu-IBp" firstAttribute="leading" secondItem="L3g-zF-FPz" secondAttribute="leading" constant="10" id="zSV-QA-9kv"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dgl-c7-bSf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0j9-H2-2Xb"/>
+                            <constraint firstItem="akD-cC-FGr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="94Y-M7-11a"/>
+                            <constraint firstItem="dgl-c7-bSf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RfC-3h-zOr"/>
+                            <constraint firstItem="akD-cC-FGr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZxC-gs-xTL"/>
+                            <constraint firstItem="akD-cC-FGr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jRV-iy-3a8"/>
+                            <constraint firstItem="dgl-c7-bSf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nyE-yp-rf0"/>
+                            <constraint firstItem="akD-cC-FGr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pHB-Zj-v42"/>
+                            <constraint firstItem="dgl-c7-bSf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uSW-13-N8t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="groupExecCheckbox" destination="Q6f-1Q-DzO" id="Duz-ih-SYU"/>
+                        <outlet property="groupPickerView" destination="QBI-CA-OIT" id="v9E-1g-vPg"/>
+                        <outlet property="groupReadCheckbox" destination="w10-Db-3ga" id="fiC-st-6Kx"/>
+                        <outlet property="groupWriteCheckbox" destination="lFs-GZ-VDW" id="N9r-BM-fkM"/>
+                        <outlet property="othersExecCheckbox" destination="PEq-Gv-yW8" id="ADS-zC-bQg"/>
+                        <outlet property="othersPickerView" destination="Dpp-iE-an3" id="gfF-UX-xrp"/>
+                        <outlet property="othersReadCheckbox" destination="Buq-aF-uX9" id="W58-Di-fgB"/>
+                        <outlet property="othersWriteCheckbox" destination="Jp5-QI-1Pd" id="Nfp-mx-gT8"/>
+                        <outlet property="userExecCheckbox" destination="bs1-XH-xNN" id="Mg8-Qc-Vdf"/>
+                        <outlet property="userPickerView" destination="m4i-xu-IBp" id="vWh-7i-k04"/>
+                        <outlet property="userReadCheckbox" destination="3Jb-K4-suV" id="j1v-Nj-MdE"/>
+                        <outlet property="userWriteCheckbox" destination="X6H-JG-Es6" id="E7h-Pj-axe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="117.25352112676056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.jpg" width="600" height="375"/>
+        <image name="execChecked" width="48" height="48"/>
+        <image name="execUnchecked" width="48" height="48"/>
+        <image name="readChecked" width="48" height="48"/>
+        <image name="readUnchecked" width="48" height="48"/>
+        <image name="writeChecked" width="48" height="48"/>
+        <image name="writeUnchecked" width="48" height="48"/>
+    </resources>
+</document>
